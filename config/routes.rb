@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-root to: "pages#home"
+  
+  
+
+  root to: "pages#home"
 
   get 'pages/home'
   get 'pages/erb_demo'
@@ -11,10 +14,10 @@ root to: "pages#home"
   get 'categories/:id/delete' => 'categories#delete', :as => :categories_delete
 
   resources :products
+  
   get 'products/:id/delete' => 'products#delete', :as => :products_delete
 
-
-
+  devise_for :users
   #get 'categories/index'
 
   #get 'categories/show'

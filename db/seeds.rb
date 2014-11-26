@@ -16,6 +16,8 @@
 	weddings = Category.create(name: 'Weddings', thumburl: 'http://hostingessence.com/wp-content/uploads/2012/04/green-wedding.jpg')
    craft_supplies = Category.create(name: 'Craft Supplies', thumburl: 'http://bit.ly/1w1uPow')
 
+   user =User.create(email:'me@email.com', password: 'password#1', password_confirmation: 'password#1')
+
    #Art
    Product.create(product_name: 'Russian Acrylic', description: "Acrylic on Canvas", price: 59.00, thumburl: 'http://bit.ly/1nDkJZw', category_id: art.id)
    Product.create(product_name: 'Spanish Canvas Painting', description: "La Fuente de Monteforte Painting Acrylic", price: 79.00, thumburl: 'http://upload.wikimedia.org/wikipedia/commons/e/eb/144-la_fuente_de_Monforte_V.jpg',
