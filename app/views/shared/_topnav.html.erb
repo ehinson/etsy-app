@@ -2,8 +2,8 @@
 <div class="browse">
   <div class="container">
     <ul class="nav navbar-nav">
-      <a class="navbar-brand logo" href="#"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20140703190113.png"></a>
-    
+      
+    <a class="navbar-brand logo" href="pages/home.html"><img src="https://www.etsy.com/assets/dist/images/etsylogo.20140703190113.png"></a>
       
       <li><a href="#">Art</a></li>
       <li><a href="#">Home &amp; Living</a></li>
@@ -16,8 +16,9 @@
       <li><a href="#">Weddings</a></li>
       <li><a href="#">Crafts</a></li>
     </ul>
+
 <ul class="header-nav navbar-text navbar-right">
-          
+         
             <% if user_signed_in? %>
               Logged in as <span class="navbar-link"><strong>
                 <%=  current_user.email %>
@@ -27,11 +28,12 @@
               <%= link_to "Sign up", new_user_registration_path, :class => "btn btn-default" %>
               <%= link_to "Sign in", new_user_session_path, :class => "btn btn-default" %>
             <% end %>
-            <li class="account">
+             <li class="account">
               <div class="cart pull-right">
                 <i class="fa fa-shopping-cart"></i>
               </div>
           </li>
+            
         </ul>
   </div>
 </div>
